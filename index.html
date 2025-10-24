@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="fatherName">Father's Name:</label><br />
+            <input type="text" id="fatherName" name="fatherName" required /><br /><br />
+
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" required /><br /><br />
+
+            <label for="rank">Rank:</label><br />
+            <input type="number" id="rank" name="rank" required /><br /><br />
+
+            <label for="category">Category:</label><br />
+            <select id="category" name="category" required>
+                <option value="Counselling">Counselling</option>
+                <option value="Spot">Spot</option>
+            </select><br /><br />
+
+            <label for="address">Address:</label><br />
+            <textarea id="address" name="address" required></textarea><br /><br />
+
+            <input type="submit" value="Register" />
+        </form>
+    </main>
+</body>
+</html>
+
